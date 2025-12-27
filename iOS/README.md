@@ -81,11 +81,39 @@ cd iOS
 ---
 
 ### 3. Open the Project
-
 Open the `.xcodeproj` file in Xcode and run the app on:
 
 - Simulator **or**
 - Physical device (both are acceptable)
+#### Important: Fix Signing & Capabilities (iOS)
+
+After **downloading the project ZIP from GitHub** (`Sandesh282/UIChallenge/iOS`) and extracting it on your system, you **must** update the Signing settings in Xcode before running the app.
+
+If you skip this step, the project will not build or run.
+
+#### Step-by-Step Instructions
+
+1. Extract the downloaded ZIP file
+2. Open the project by double-clicking the `.xcodeproj` file in **Xcode**
+3. In the left sidebar, click on the **project name** (top item)
+4. Select the **App target** (not the Tests target)
+5. Open the **Signing & Capabilities** tab
+6. Under **Team**, select your **Apple ID / Personal Team**
+7. Make sure **Automatically manage signing** is enabled
+8. If Xcode shows any errors, click **Fix Issue** and let Xcode resolve them
+
+#### After This Step
+
+Once signing is configured, you can run the app on:
+
+* iOS Simulator
+* Physical iPhone (optional, but recommended)
+
+#### Notes
+
+* If your Apple ID does not appear, add it from **Xcode → Settings → Accounts**
+
+
 
 ---
 
